@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 16px 0;
+    display: flex;
+    border-bottom: 16px solid #000;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+    background-color: #fff;
+    color: #004080;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#btn_cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overLay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overLay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overLay-imagem-link {
+    opacity: 1;
+}
